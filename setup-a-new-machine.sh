@@ -133,8 +133,11 @@ export PATH=$HOME/homebrew/bin:$HOME/homebrew/sbin:$PATH
 # maybe you still need an LD_LIBRARY export thing
 
 # install all the things
-./brew.sh
-./brew-cask.sh
+
+brew tap homebrew/bundle
+brew bundle --file $DOTFILES/Brewfile
+#./brew.sh
+#./brew-cask.sh
 
 ### end of homebrew
 ##############################################################################################################
